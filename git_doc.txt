@@ -1,0 +1,58 @@
+## 1. Initialize a Repository
+git init
+Initialize a new Git repository in the current project folder.
+
+## 2. Add Files to Staging
+git add .
+Add all files to the staging area.
+ 
+You can also add specific files:
+git add filename.ext
+
+## 3. Commit Changes
+git commit -m "first commit"
+Save staged changes with a commit message.
+
+## 4. Connect to Remote Repository
+git remote add origin <repo-url>
+Link the local repository to a remote GitHub repository.
+
+## 5. Set Branch Name & Push Code
+git branch -M main
+git push -u origin main
+Rename the branch to `main` and push it to GitHub.
+
+## 6. Create a New Branch
+git checkout -b feature-branch
+Create and switch to a new branch named `feature-branch`.
+
+## 7. Work on New Branch
+git add .
+git commit -m "Added new feature"
+git push -u origin feature-branch
+Add, commit, and push new changes on the feature branch.
+
+## 8. Merge a Branch into Main
+git checkout main
+git pull origin main
+git merge feature-branch
+git push origin main
+Switch to `main`, update it, merge the feature branch, and push the changes.
+
+## 9. Check Remote Repositories
+git remote -v
+Displays the remote repositories linked with your local repo.
+
+## 10. Check Status
+git status
+Shows the current status of files (staged, unstaged, untracked).
+
+## 11. List Branches
+git branch
+Displays all local branches. The active branch will be marked with `*`.
+
+## 12. Delete a Branch
+git branch -d feature-branch
+Deletes the branch locally.
+git push origin --delete feature-branch
+Deletes the branch from the remote repository.
